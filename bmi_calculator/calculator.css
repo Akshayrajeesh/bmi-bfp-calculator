@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/ChatGPT\ Image\ Jun\ 27\,\ 2025\,\ 08_28_16\ AM.png');
+    background-size: cover;        
+    background-repeat: no-repeat;  
+    background-position: center;   
+    height: 100vh;           
+    position: relative; 
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container{
+    border:1px solid #0ff;
+    width: 50%;
+    height: 85%;
+    border-radius: 12px;
+}
+.generate-report{
+    height: 30px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #0ff;
+    color: #0ff;
+    backdrop-filter: blur(4px);
+    font-size: larger;
+    cursor: pointer;
+}
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 0px #0ff;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 15px #0ff;
+    transform: scale(0.96);
+  }
+  100% {
+    box-shadow: 0 0 0px #0ff;
+    transform: scale(1);
+  }
+}
+.glow-click {
+  animation: glowPulse 0.4s ease;
+}
+/* .name-age{
+  display: flex;
+  justify-content: space-around;
+}
+.gender-occupation{
+  display: flex;
+  justify-content: space-around;
+}
+.height-weight{
+  display: flex;
+  justify-content: space-around;
+}
+.neck-waist{
+  display: flex;
+  justify-content: space-around;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+} */
+label{
+  display: block;
+  color: #0ff;
+  margin-bottom: 3px;
+}
+input{
+    height: 30px;
+    width: 170px;
+    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #0ff;
+    color: #0ff;
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+}
+select{
+    height: 30px;
+    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #0ff;
+    color: #0ff;
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+}
+option{
+  border: none;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #0ff;
+    color: #0ff;
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"]:focus,
+input[type="text"]:focus,
+select:focus {
+  border-color: #0ff;          
+  outline: none;                
+  box-shadow: 0 0 5px #00cfff80;
+}
+
+.box{
+   display: flex;
+   justify-content: flex-start;
+   gap: 5px;
+   margin-bottom: 40px;
+   padding-left: 70px;
+}
+.gender-box{
+  display: flex;
+  flex-direction: column;
+  gap:3px;
+}
+.age-box{
+  margin-left: 110px;
+}
+.container{
+  padding-top: 20px;
+}
+.hip-box{
+  display: inline-block;
+  flex-direction: column;
+  gap:3px;
+  padding-left: 70px;
+}
+.occupation-box{
+  margin-left: 70px;
+}
+.weight-box,.waist-box{
+  padding-left: 67px;
+}
+select option {
+  color: #0ff;
+  background-color: #020125;
+  font-size: 16px;
+}
+.report{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    color: white;
+    height: 400px;
+    width: 900px;
+    text-align: center;
+    border:1px solid #0ff;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 30px;
+    word-spacing: 4px;
+    display: none;
+}
+.spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #ccc;
+  border-top-color: #0ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

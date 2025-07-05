@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Info For Calculation</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="report">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+      provident, voluptatum itaque tempore nobis ipsum exercitationem eos
+      tempora esse ratione, laudantium quaerat officiis libero blanditiis
+      expedita aliquid eligendi qui maxime. Recusandae commodi quasi ratione
+      porro, provident autem adipisci atque aperiam alias in cum nemo velit
+      facilis voluptas. Mollitia, recusandae exercitationem odit itaque rerum
+      quam nobis dicta, ullam minus alias ad.
+    </div>
+    <div class="container">
+      <form id="userForm">
+        <div class="name-age box">
+          <div class="name-box">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="age-box">
+            <label for="age">Age</label>
+            <input
+              type="number"
+              id="age"
+              min="1"
+              max="120"
+              placeholder="Enter your age"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="gender-occupation box">
+          <div class="gender-box">
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+              <option value="" disabled selected>Select your gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <small style="color: #ccc; font-size: 0.75rem">
+              Choose your biological sex for accurate BFP.
+            </small>
+          </div>
+          <div class="occupation-box">
+            <label for="occupation">Occupation</label>
+            <select id="occupation" name="occupation" required>
+              <option value="" disabled selected>Select</option>
+              <option value="desk">Desk job / Office worker</option>
+              <option value="active">Physically active job</option>
+              <option value="shift">Shift worker / Night shifts</option>
+              <option value="student">Student</option>
+              <option value="retired">Retired</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="height-weight box">
+          <div class="height-box">
+            <label for="height">Height</label>
+            <input
+              type="number"
+              id="height"
+              placeholder="Enter height"
+              step="0.1"
+              min="1"
+              required
+            />
+            <select id="heightUnit">
+              <option value="cm">cm</option>
+              <option value="m">m</option>
+              <option value="ft">ft</option>
+            </select>
+          </div>
+          <div class="weight-box">
+            <label for="weight">Weight</label>
+            <input
+              type="number"
+              id="weight"
+              placeholder="Enter weight"
+              step="0.1"
+              min="1"
+              required
+            />
+            <select id="weightUnit">
+              <option value="kg">kg</option>
+              <option value="lb">lb</option>
+            </select>
+          </div>
+        </div>
+        <div class="neck-waist box">
+          <div class="neck-box">
+            <label for="neck">Neck</label>
+            <input
+              type="number"
+              id="neck"
+              step="0.1"
+              min="1"
+              placeholder="Enter neck circumference"
+              required
+            />
+            <select id="neckUnit">
+              <option value="cm">cm</option>
+              <option value="in">in</option>
+            </select>
+          </div>
+          <div class="waist-box">
+            <label for="waist">Waist</label>
+            <input
+              type="number"
+              id="waist"
+              step="0.1"
+              min="1"
+              placeholder="Enter waist circumference"
+              required
+            />
+            <select id="waistUnit">
+              <option value="cm">cm</option>
+              <option value="in">in</option>
+            </select>
+          </div>
+        </div>
+        <div class="hip-box box">
+          <label for="hip">Hip</label>
+          <input
+            type="number"
+            id="hip"
+            step="0.1"
+            min="1"
+            placeholder="Enter hip circumference"
+            required
+          />
+          <select id="hipUnit">
+            <option value="cm">cm</option>
+            <option value="in">in</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <p id="formErrorMsg" style="color: red; display: none">
+      Please fill out all required fields correctly.
+    </p>
+    <button class="generate-report" type="submit">Generate Report</button>
+    <script src="script.js"></script>
+  </body>
+</html>
